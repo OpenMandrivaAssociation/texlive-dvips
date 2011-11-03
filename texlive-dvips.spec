@@ -1,3 +1,9 @@
+# revision 24417
+# category Package
+# catalog-ctan undef
+# catalog-date 2011-01-01 13:57:55 +0100
+# catalog-license gpl
+# catalog-version undef
 Name:		texlive-dvips
 Version:	20110101
 Release:	1
@@ -13,7 +19,7 @@ Requires(post):	texlive-tlpkg
 Requires:	texlive-dvips.bin
 Provides:	tetex-dvips = %{version}
 Provides:	texlive-dvips = %{version}
-Provides:	texlive-texmf-dvips = %{version}
+Provides:	texlive-texmf-dvips = %{version}}
 Obsoletes:	tetex-dvips <= 3.0
 Conflicts:	tetex-dvips <= 3.0
 Obsoletes:	texlive-dvips <= 2007
@@ -138,6 +144,7 @@ part of the TeX-live sources.
 %doc %{_texmfdir}/doc/man/man1/afm2tfm.man1.pdf
 %doc %{_mandir}/man1/dvips.1*
 %doc %{_texmfdir}/doc/man/man1/dvips.man1.pdf
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -152,3 +159,5 @@ mkdir -p %{buildroot}%{_mandir}/man1
 mv %{buildroot}%{_texmfdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
 mkdir -p %{buildroot}%{_infodir}
 mv %{buildroot}%{_texmfdir}/doc/info/*.info %{buildroot}%{_infodir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
