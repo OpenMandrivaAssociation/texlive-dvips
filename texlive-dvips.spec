@@ -15,7 +15,8 @@ Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dvips.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dvips.doc.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
-Requires(post):	texlive-tlpkg
+Requires(pre):	texlive-tlpkg
+Requires(post):	texlive-kpathsea
 Requires:	texlive-dvips.bin
 Provides:	tetex-dvips = %{version}
 Provides:	texlive-dvips = %{version}
