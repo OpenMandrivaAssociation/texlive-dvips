@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-dvips
 Version:	20110101
-Release:	1
+Release:	2
 Summary:	A DVI to PostScript driver
 Group:		Publishing
 URL:		http://tug.org/texlive
@@ -50,6 +50,7 @@ part of the TeX-live sources.
     if [ $1 -eq 0 ]; then
 	%_texmf_mktexlsr_post
     fi
+    rm -fr %{_texmfvardir}/fonts/map/dvips
 
 #-----------------------------------------------------------------------
 %files
