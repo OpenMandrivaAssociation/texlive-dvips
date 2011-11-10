@@ -1,4 +1,4 @@
-# revision 24417
+# revision 24472
 # category Package
 # catalog-ctan undef
 # catalog-date 2011-01-01 13:57:55 +0100
@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-dvips
 Version:	20110101
-Release:	2
+Release:	3
 Summary:	A DVI to PostScript driver
 Group:		Publishing
 URL:		http://tug.org/texlive
@@ -20,7 +20,7 @@ Requires(post):	texlive-kpathsea
 Requires:	texlive-dvips.bin
 Provides:	tetex-dvips = %{version}
 Provides:	texlive-dvips = %{version}
-Provides:	texlive-texmf-dvips = %{version}}
+Provides:	texlive-texmf-dvips = %{version}
 Obsoletes:	tetex-dvips <= 3.0
 Conflicts:	tetex-dvips <= 3.0
 Obsoletes:	texlive-dvips <= 2007
