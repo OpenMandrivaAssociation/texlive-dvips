@@ -20,28 +20,18 @@ Requires(post):	texlive-kpathsea
 Requires:	texlive-dvips.bin
 %rename tetex-dvips
 %rename texlive-texmf-dvips
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 This package has been withdrawn from CTAN. The current sources
 of dvips may be found in the distribution of dvipsk which forms
 part of the TeX-live sources.
 
-%pre
-    %_texmf_mktexlsr_pre
-
 %post
-    %_texmf_mktexlsr_post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
-    fi
+    %{_sbindir}/texlive.post
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
     rm -fr %{_texmfvardir}/fonts/map/dvips
 
@@ -139,7 +129,6 @@ part of the TeX-live sources.
 %doc %{_texmfdir}/doc/man/man1/afm2tfm.man1.pdf
 %doc %{_mandir}/man1/dvips.1*
 %doc %{_texmfdir}/doc/man/man1/dvips.man1.pdf
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -154,5 +143,3 @@ mkdir -p %{buildroot}%{_mandir}/man1
 mv %{buildroot}%{_texmfdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
 mkdir -p %{buildroot}%{_infodir}
 mv %{buildroot}%{_texmfdir}/doc/info/*.info %{buildroot}%{_infodir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
