@@ -1,12 +1,12 @@
-# revision 25424
+# revision 26213
 # category Package
 # catalog-ctan undef
-# catalog-date 2011-01-01 13:57:55 +0100
+# catalog-date 2012-04-21 10:57:19 +0200
 # catalog-license gpl
 # catalog-version undef
 Name:		texlive-dvips
-Version:	20110101
-Release:	9
+Version:	20120421
+Release:	1
 Summary:	A DVI to PostScript driver
 Group:		Publishing
 URL:		http://tug.org/texlive
