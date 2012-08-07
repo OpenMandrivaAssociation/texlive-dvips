@@ -1,11 +1,11 @@
-# revision 26213
+# revision 27147
 # category Package
 # catalog-ctan undef
-# catalog-date 2012-04-21 10:57:19 +0200
+# catalog-date 2012-07-03 17:35:36 +0200
 # catalog-license gpl
 # catalog-version undef
 Name:		texlive-dvips
-Version:	20120421
+Version:	20120703
 Release:	1
 Summary:	A DVI to PostScript driver
 Group:		Publishing
@@ -22,9 +22,10 @@ Requires:	texlive-dvips.bin
 %rename texlive-texmf-dvips
 
 %description
-This package has been withdrawn from CTAN. The current sources
-of dvips may be found in the distribution of dvipsk which forms
-part of the TeX-live sources.
+This package has been withdrawn from CTAN, and bundled into the
+distributions' package sets. The current sources of dvips may
+be found in the distribution of dvipsk which forms part of the
+TeX-live sources.
 
 %post
     %{_sbindir}/texlive.post
