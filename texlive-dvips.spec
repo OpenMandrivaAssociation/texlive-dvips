@@ -1,4 +1,4 @@
-# revision 27932
+# revision 27147
 # category Package
 # catalog-ctan undef
 # catalog-date 2012-07-03 17:35:36 +0200
@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-dvips
 Version:	20120703
-Release:	2
+Release:	1
 Summary:	A DVI to PostScript driver
 Group:		Publishing
 URL:		http://tug.org/texlive
@@ -144,3 +144,53 @@ mkdir -p %{buildroot}%{_mandir}/man1
 mv %{buildroot}%{_texmfdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
 mkdir -p %{buildroot}%{_infodir}
 mv %{buildroot}%{_texmfdir}/doc/info/*.info %{buildroot}%{_infodir}
+
+
+%changelog
+* Tue Aug 07 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120703-1
++ Revision: 812241
+- Update to latest release.
+
+* Mon Jun 11 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120421-1
++ Revision: 804570
+- Update to latest release.
+
+* Thu Feb 23 2012 Paulo Andrade <pcpa@mandriva.com.br> 20110101-9
++ Revision: 779450
+- Update to latest release.
+
+* Wed Feb 08 2012 Paulo Andrade <pcpa@mandriva.com.br> 20110101-8
++ Revision: 772052
+- Update to latest release.
+
+* Thu Jan 19 2012 Paulo Andrade <pcpa@mandriva.com.br> 20110101-7
++ Revision: 762610
+- Update to latest upstream package
+
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20110101-6
++ Revision: 751243
+- Rebuild to reduce used resources
+
+* Tue Nov 22 2011 Paulo Andrade <pcpa@mandriva.com.br> 20110101-5
++ Revision: 732516
+- texlive-dvips
+
+* Sun Nov 13 2011 Paulo Andrade <pcpa@mandriva.com.br> 20110101-4
++ Revision: 730335
+- Use rename macro instead of mix of provides/conflicts/obsoletes
+
+* Thu Nov 10 2011 Paulo Andrade <pcpa@mandriva.com.br> 20110101-3
++ Revision: 729649
+- texlive-dvips
+
+* Tue Nov 08 2011 Paulo Andrade <pcpa@mandriva.com.br> 20110101-2
++ Revision: 729084
+- texlive-dvips
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20110101-1
++ Revision: 718286
+- texlive-dvips
+- texlive-dvips
+- texlive-dvips
+- texlive-dvips
+
