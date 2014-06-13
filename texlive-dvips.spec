@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-dvips
 Version:	20140319
-Release:	1
+Release:	2
 Summary:	A DVI to PostScript driver
 Group:		Publishing
 URL:		http://tug.org/texlive
