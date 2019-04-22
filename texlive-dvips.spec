@@ -1,7 +1,7 @@
 Name:		texlive-dvips
 Epoch:		1
-Version:	20180331
-Release:	2
+Version:	20190107
+Release:	1
 Summary:	A DVI to PostScript driver
 Group:		Publishing
 URL:		http://tug.org/texlive
