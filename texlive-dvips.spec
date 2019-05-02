@@ -1,6 +1,6 @@
 Name:		texlive-dvips
 Epoch:		1
-Version:	20190107
+Version:	20190327
 Release:	1
 Summary:	A DVI to PostScript driver
 Group:		Publishing
