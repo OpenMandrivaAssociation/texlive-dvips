@@ -1,13 +1,13 @@
 Name:		texlive-dvips
 Epoch:		1
-Version:	20190327
+Version:	62387
 Release:	1
 Summary:	A DVI to PostScript driver
 Group:		Publishing
 URL:		http://tug.org/texlive
 License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dvips.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dvips.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dvips.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dvips.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -23,13 +23,13 @@ be found in the distribution of dvipsk which forms part of the
 TeX-live sources.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	rm -fr %{_texmfvardir}/fonts/map/dvips
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -45,7 +45,7 @@ TeX-live sources.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
