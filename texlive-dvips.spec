@@ -4,7 +4,7 @@ Version:	70015
 Release:	1
 Summary:	A DVI to PostScript driver
 Group:		Publishing
-URL:		http://tug.org/texlive
+URL:		https://tug.org/texlive
 License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dvips.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dvips.doc.r%{version}.tar.xz
