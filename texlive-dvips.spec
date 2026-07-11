@@ -12,8 +12,6 @@ Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/dvips.r%{tl_revi
 Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/dvips.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
 BuildSystem:	texlive
-BuildRequires:	texlive-tlpkg
-%texlive_base_requires
 Requires:	texlive(dvips.bin)
 Provides:	texlive(%{tl_name}) = %{tl_revision}
 
